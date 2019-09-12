@@ -9,7 +9,7 @@
 */
 
 export const defaults = {
-    isLoggedIn: localStorage.getItem("token") !== null ? true : false
+    isLoggedIn: Boolean(localStorage.getItem("token")) || false
 }
 
 // isLoggedIn를 true로 바꿀 function을 만들 것이에용 
